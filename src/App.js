@@ -15,24 +15,29 @@ class App extends React.Component {
   render() {
     
     return (
-    <div className="wrapper">
-      <div className="switch-wrapper">
-        <div className="joy-con">
-            <img src={leftBlueJoycon}/>
-        </div>
+    <div>
+      <div className="wrapper">
+        <div className="switch-wrapper">
+          <div className="joy-con">
+              <img src={leftBlueJoycon}/>
+          </div>
 
-        <div className="switch-screen-outer">
+          <div className="switch-screen-outer">
+            
+                <CharacterCarousel/>
           
-              <CharacterCarousel/>
-        
-        </div>
+          </div>
 
-        <div className="joy-con">
-            <img src={rightRedJoycon}/>
-        </div>
+          <div className="joy-con">
+              <img src={rightRedJoycon}/>
+          </div>
 
+        </div>
+      </div>  
+      <div id="warning-message">
+        This web app is only viewable in landscape mode
       </div>
-    </div>    
+    </div>  
     );
   }
 }
